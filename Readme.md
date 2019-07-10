@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Апполонов](https://up.htmlacademy.ru/adaptive/17/user/1030755).
-* Наставник: `Неизвестно`.
+* Наставник: [Альбина Токарчук].
 
 ---
 
