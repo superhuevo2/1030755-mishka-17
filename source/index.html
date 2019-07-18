@@ -2,30 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>HTML Academy: Мишка.</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин игрушек ручной работы">
+      <a class="page-header__logo-link logotype">
+        <img class="logotype-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин игрушек ручной работы">
       </a>
       <nav class="page-header__navigation navigation">
         <button class="navigation__button">Открыть меню</button>
         <div class="navigation__wrapper">
-          <ul class="navigation__site-nav site-nav"> <!-- стоит ли здесь выделять site-nav и user-nav отдельными блоками или нет необходимости?-->
+          <ul class="navigation__site-nav site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Каталог товаров</a>
+              <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Вязание на заказ</a>
+              <a class="site-nav__link" href="knitting.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="navigation__user-nav user-nav">
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--search" href="#">Поиск по сайту</a>
+              <a class="user-nav__link user-nav__link--search" href="search.html">Поиск по сайту</a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--cart" href="#">Корзина: пока пуста</a>
+              <a class="user-nav__link user-nav__link--cart" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -37,38 +37,42 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <p class="product-category__slogan">Милые штуки ручной работы для дома</p>
         <ul class="product-category__list">
-          <li><a class="product-category__item product-category__item--interior">Предметы интерьера</a></li>
-          <li><a class="product-category__item product-category__item--toys">Детские игрушки</a></li>
+          <li>
+            <a class="product-category__item product-category__item--interior" href="interior.html">Предметы интерьера</a>
+          </li>
+          <li>
+            <a class="product-category__item product-category__item--toys" href="toys.html">Детские игрушки</a>
+          </li>
         </ul>
       </section>
       <section class="product-week">
-        <hgroup class="product-week__group-of-titles"> <!--правильно ли выбрал тег?-->
+        <header class="product-week__general">
           <h2 class="product-week__title">Товар недели</h1>
-          <h3 class="product-week__title--name">Вязаные корзинки</h2>
-        </hgroup>
+          <p class="product-week__section">Вязаные корзинки</p>
+        </header>
         <p class="product-week__info">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
         </p>
-        <table class='product-week__description'>  <!-- не очень нравится как сделал таблицу, -->
+        <table class="product-week__description">
           <caption class="visually-hidden">Характеристики товара</caption>
-          <tr class="product-week__property">
-            <td>Цвет:</td>
-            <td>"Тиффани"/серый</td>
+          <tr>
+            <td class="product-week__property">Цвет:</td>
+            <td class="product-week__value">"Тиффани"/серый</td>
           </tr>
-          <tr class="product-week__property">
-            <td>Диаметр:</td>
-            <td>25 см</td>
+          <tr>
+            <td class="product-week__property">Диаметр:</td>
+            <td class="product-week__value">25 см</td>
           </tr>
-          <tr class="product-week__property">
-            <td>Высота:</td>
-            <td>15 см</td>
+          <tr>
+            <td class="product-week__property">Высота:</td>
+            <td class="product-week__value">15 см</td>
           </tr>
         </table>
-        <a class="product-week__image-link">
+        <a class="product-week__image-link" href="knitting-baskets">
           <img class="product-week__image" src="http://placehold.it/250x315" width="260" height="315" alt="Вязаные корзинки"> <!--нужно ли изображение в тег figure оборачивать?-->
         </a>
         <span class="product-week__price">Цена: 990 руб.</span>
-        <button class="product-week__button">Заказать</button>
+        <a class="product-week__order" href="cart.html">Заказать</a>
       </section>
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
@@ -84,7 +88,7 @@
       <section class="review">
         <h2 class="review__title">Отзывы</h2>
         <div class="review__wrapper">
-          <blockquote class="review__item"> <!--этот тег подходит здесь?-->
+          <blockquote class="review__item">
             <p class="review__message">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
@@ -92,38 +96,66 @@
             <p class="review__contact">@misssssiskras</p>
           </blockquote>
         </div>
-        <p class="review__button-wrapper">
+        <div class="review__button-wrapper">
           <button class="review__button review__button--back">Назад</button>
           <button class="review__button review__button--forward">Вперед</button>
-        </p>
+        </div>
+        <a class="review__write" href="feedback.html">Написать</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__list"> <!--нужна ли здесь обертка и как, в общем понять, где делать обертки, а где не нужно?-->
-          <tr>
-            <td class="contacts__field">e-mail</td>
-            <td class="contacts__value">info@mimimishkashop.ru</td>
-          </tr>
-          <tr>
-            <td class="contacts__field">адрес</td>
-            <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
-        <div class="contacts__map">Как нас найти</div>
-        <button class="contacts__button">Напишите нам</button>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <table class="contacts__list">
+            <tr>
+              <td class="contacts__field">e-mail</td>
+              <td class="contacts__value"><a href="mailto:">info@mimimishkashop.ru</a>/td>
+            </tr>
+            <tr>
+              <td class="contacts__field">адрес</td>
+              <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contacts__map map">
+          <img class="map__image" src="img/map.png" width="320" height="457" alt="Как нас найти">
+        </div>
+        <a class="contacts__write-us" href="writeus.html">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__socials socials">
         <ul class="socials__list">
-          <li class="socials__item"><a class="socials__link socials__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-          <li class="socials__item"><a class="socials__link socials__link--facebook" href="#"><span class="visually-hidden">Фейсбоок</span></a></li>
-          <li class="socials__item"><a class="socials__link socials__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#"><span class="visually-hidden">Фейсбоок</span></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+          </li>
         </ul>
       </div>
-      <p class="page-footer__copyright">
-        Разработано <a class="page-footer__htmlacademy" href="#"><span class="visually-hidden">HTML Академия</span></a>
-      </p>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Академия</span></a>
+      </div>
     </footer>
+    <div class="modal-cart">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <form class="modal-cart__form form-addtocart" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="form-addtocart__field">
+          <legend class="form-addtocart__title">Выбкрктк размер</legend>
+          <input class="form-addtocart__toolbar" type="radio" name="size" value="s" id="s-size">
+          <label class="form-addtocart__label" id="s-size">S</label>
+          <input class="form-addtocart__toolbar" type="radio" name="size" value="m" id="m-size">
+          <label class="form-addtocart__label" id="s-size">M</label>
+          <input class="form-addtocart__toolbar" type="radio" name="size" value="l" id="l-size">
+          <label class="form-addtocart__label" id="s-size">L</label>
+        </fieldset>
+        <button class="form-addtocart__button" type="submit">Добавить</button>
+      </form>
+    </div>
+    <div class="overlay"></div>
   </body>
 </html>
