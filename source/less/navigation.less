@@ -1,0 +1,32 @@
+.navigation {
+  position: relative;
+}
+
+.navigation__button {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+
+  /*temp*/
+  outline: 1px solid black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/icon-menu-open.svg")
+  }
+}
+
+.navigation__catalog-nav {
+  display: none;
+}
