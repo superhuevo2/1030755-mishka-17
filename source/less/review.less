@@ -1,0 +1,48 @@
+.review {
+  padding: 25px 0 35px;
+}
+
+.review__title {
+  .font-main-property(25px, 30px);
+  margin-bottom: 30px;
+}
+
+.review__message {
+  .font-content-property();
+  margin-bottom: 30px;
+}
+
+.review__name {
+  .font-main-property(17px, 20px);
+}
+
+.review__contact {
+  .font-content-property();
+  margin-bottom: 30px;
+}
+
+.review__button-wrapper {
+  display: flex;
+}
+
+.review__button {
+  width: 130px;
+  height: 50px;
+  font-size: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ececec;
+
+  &--back {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--forward {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}
+
+.review__write {
+  display: block;
+}
