@@ -1,10 +1,15 @@
 .review {
-  padding: 25px 0 35px;
+  padding: 25px 30px 35px;
+  background-color: @body-background;
 }
 
 .review__title {
   .font-main-property(25px, 30px);
-  margin-bottom: 30px;
+  margin: 0 0 30px;
+}
+
+.review__item {
+  margin: 0;
 }
 
 .review__message {
@@ -28,11 +33,12 @@
 .review__button {
   width: 130px;
   height: 50px;
+  margin-bottom: 40px;
   font-size: 0;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid #ececec;
+  border: @grey-border;
 
   &--back {
     background-image: url("../img/icon-left-arrow.svg");
@@ -44,5 +50,5 @@
 }
 
 .review__write {
-  display: block;
+  .mobile-button-property();
 }

@@ -1,13 +1,3 @@
-.nav-menu-links() {
-  display: block;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 75px;
-  color: #000000;
-  text-decoration: none;
-  border-bottom: 1px solid #ececec;
-}
-
 .lists-reset() {
   margin: 0;
   padding: 0;
@@ -17,13 +7,18 @@
 .font-main-property(@size: 25px, @height: 30px) {
   font-size: @size;
   line-height: @height;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @body-font-family;
   font-weight: 700;
-  color: #000000;
+  color: @main-color;
 }
 
 .font-content-property() {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @body-font-family;
   font-weight: 400;
-  color: #000000;
+  color: @content-color;
+}
+
+.mobile-button-property() {
+  display: block;
+  width: @mobile-button-width;
 }

@@ -1,5 +1,6 @@
 .product-week {
-  padding: 30px;
+  padding: 0 30px;
+  background-color: @body-background;
 }
 
 .product-week__general {
@@ -9,6 +10,7 @@
 
 .product-week__title {
   .font-main-property(25px, 30px);
+  margin: 20px 0;
 }
 
 .product-week__section {
@@ -30,12 +32,12 @@
 
 .product-week__property {
   width: 100px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: @grey-border;
 }
 
 .product-week__value {
   width: 160px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: @grey-border;
 }
 
 .product-week__price {
@@ -43,10 +45,10 @@
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
-  color: #444444;
+  color: @content-color;
   text-align: center;
 }
 
 .product-week__order {
-  display: block;
+  .mobile-button-property();
 }
