@@ -4,16 +4,18 @@
   list-style: none;
 }
 
-.font-main-property(@size: 25px, @height: 30px) {
-  font-size: @size;
-  line-height: @height;
+.font-main-property(@font-size: 25px, @line-height: 30px) {
+  font-size: @font-size;
+  line-height: @line-height;
   font-family: @body-font-family;
   font-weight: 700;
   color: @main-color;
 }
 
-.font-content-property() {
+.font-content-property(@font-size: 15px, @line-height: 30px) {
   font-family: @body-font-family;
+  font-size: @font-size;
+  line-height: @line-height;
   font-weight: 400;
   color: @content-color;
 }
