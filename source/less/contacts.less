@@ -1,7 +1,6 @@
 .contacts {
   padding-top: 40px;
   padding-bottom: 30px;
-  background-color: @main-background;
 }
 
 .contacts__wrapper {
@@ -9,18 +8,24 @@
 }
 
 .contacts__title {
-  .font-main-property(18px, 30px);
-  margin: 0 0 40px;
+  .font-property(18px, 30px);
+  margin-bottom: 40px;
   padding: 0;
 }
 
 .contacts__list {
-  .font-content-property();
+  .font-property(15px, 30px, 400, @content-color);
   margin-bottom: 40px;
 }
 
 .contacts__field {
   width: 75px;
+}
+
+.contacts__mail-link {
+  color: @content-color;
+  text-decoration: none;
+  border-bottom: 1px solid @content-color;
 }
 
 .contacts__map {
@@ -29,7 +34,5 @@
 }
 
 .contacts__write-us {
-  display: block;
   margin: 0 30px;
-  width: @mobile-button-width;
 }

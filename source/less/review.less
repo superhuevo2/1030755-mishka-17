@@ -1,10 +1,9 @@
 .review {
   padding: 25px 30px 35px;
-  background-color: @main-background;
 }
 
 .review__title {
-  .font-main-property(25px, 30px);
+  .font-property();
   margin: 0 0 30px;
 }
 
@@ -13,16 +12,16 @@
 }
 
 .review__message {
-  .font-content-property();
+  .font-property(15px, 30px, 400, @content-color);
   margin-bottom: 30px;
 }
 
 .review__name {
-  .font-main-property(17px, 20px);
+  .font-property(17px, 20px);
 }
 
 .review__contact {
-  .font-content-property();
+  .font-property(15px, 30px, 400, @content-color);
   margin-bottom: 30px;
 }
 
@@ -47,9 +46,4 @@
   &--forward {
     background-image: url("../img/icon-right-arrow.svg");
   }
-}
-
-.review__write {
-  display: block;
-  width: @mobile-button-width;
 }
