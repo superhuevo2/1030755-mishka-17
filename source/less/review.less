@@ -1,0 +1,49 @@
+.review {
+  padding: 25px 30px 35px;
+}
+
+.review__title {
+  .font-property();
+  margin: 0 0 30px;
+}
+
+.review__item {
+  margin: 0;
+}
+
+.review__message {
+  .font-property(15px, 30px, 400, @content-color);
+  margin-bottom: 30px;
+}
+
+.review__name {
+  .font-property(17px, 20px);
+}
+
+.review__contact {
+  .font-property(15px, 30px, 400, @content-color);
+  margin-bottom: 30px;
+}
+
+.review__button-wrapper {
+  display: flex;
+}
+
+.review__button {
+  margin-bottom: 40px;
+  width: 130px;
+  height: 50px;
+  font-size: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: @grey-border;
+
+  &--back {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--forward {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}

@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Каталог.</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин игрушек ручной работы">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин игрушек ручной работы">
       </a>
       <nav class="page-header__navigation navigation">
         <button class="navigation__button">Открыть меню</button>
@@ -44,11 +45,11 @@
                   Рост 30 см, вес 200 г
                 </p>
               </div>
-              <img class="product__image" src="img/rabbit.jpg" alt="Зайчик-попрыгайчик">
+              <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
             </a>
             <div class="product__price-wrapper">
               <span class="product__price">1200 руб.</span>
-              <a class="product__button" href="cart.html">Добавить в корзину</a>
+              <a class="product__button" href="cart.html"><span class="visually-hidden">Добавить в корзину</span></a>
             </div>
           </li>
           <li class="catalog__item product">
@@ -59,26 +60,26 @@
                   Диаметр 15 см, высота 10 см
                 </p>
               </div>
-              <img class="product__image" src="img/clothes-basket.jpg" alt="Корзинка для белья">
+              <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
             </a>
             <div class="product__price-wrapper">
               <span class="product__price">690 руб.</span>
-              <a class="product__button" href="cart.html">Добавить в корзину</a>
+              <a class="product__button" href="cart.html"><span class="visually-hidden">Добавить в корзину</span></a>
             </div>
           </li>
-          <li class="product__item">
+          <li class="catalog__item product">
             <a class="product__link" href="product-3.html">
               <div class="product__name-wrapper">
-                <h3 class="product__product-name">Корзинка для белья</h3>
+                <h3 class="product__name">Большая корзинка для игрушек</h3>
                 <p class="product__description">
                   Диаметр 30 см, высота 30 см
                 </p>
               </div>
+              <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Корзинка для игрушек">
             </a>
-            <img class="product__image" src="img/toys-basket.jpg" alt="Корзинка для игрушек">
             <div class="product__price-wrapper">
               <span class="product__price">1500 руб.</span>
-              <a class="product__button" href="cart.html">Добавить в корзину</a>
+              <a class="product__button" href="cart.html"><span class="visually-hidden">Добавить в корзину</span></a>
             </div>
           </li>
         </ul>
@@ -112,11 +113,11 @@
         <fieldset class="size-form__field">
           <legend class="size-form__title">Выберете размер</legend>
           <input class="size-form__radio" type="radio" name="size" value="s" id="s-size">
-          <label class="size-form__label" id="s-size">S</label>
+          <label class="size-form__label" for="s-size">S</label>
           <input class="size-form__radio" type="radio" name="size" value="m" id="m-size">
-          <label class="size-form__label" id="m-size">M</label>
+          <label class="size-form__label" for="m-size">M</label>
           <input class="size-form__radio" type="radio" name="size" value="l" id="l-size">
-          <label class="size-form__label" id="l-size">L</label>
+          <label class="size-form__label" for="l-size">L</label>
         </fieldset>
         <button class="size-form__button" type="submit">Добавить</button>
       </form>
