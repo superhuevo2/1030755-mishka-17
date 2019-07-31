@@ -10,6 +10,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .site-nav {
+    width: 400px;
+  }
+}
+
 .site-nav__link {
   display: block;
   padding: 28px 0 28px 75px;
@@ -21,7 +27,22 @@
 @media (min-width: @tablet-width) {
   .site-nav__link {
     padding: 0;
-    width: 160px;
+    width: 165px;
     border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-nav__link {
+    padding: 32px 0;
+
+    &--catalog {
+      width: 185px;
+      border-radius: @grey-border;
+    }
+
+    &--form {
+      width: 200px;
+    }
   }
 }

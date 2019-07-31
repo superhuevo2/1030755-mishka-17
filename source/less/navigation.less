@@ -39,11 +39,25 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .navigation__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .navigation__site-nav {
     position: absolute;
     left: -320px;
     bottom: -50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation__site-nav {
+    position: static;
   }
 }
 
