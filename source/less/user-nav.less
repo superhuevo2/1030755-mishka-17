@@ -2,10 +2,64 @@
   .lists-reset();
 }
 
+@media (min-width: @tablet-width) {
+  .user-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .user-nav__link {
+  position: relative;
   display: block;
   padding: 28px 0 28px 75px;
   color: @main-color;
   text-decoration: none;
   border-bottom: @grey-border;
+
+  &--search {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-search.svg");
+      background-repeat: no-repeat;
+      opacity: 0.2;
+    }
+  }
+  &--cart {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 21px;
+      height: 19px;
+      background-image: url("../img/icon-cart.svg");
+      background-repeat: no-repeat;
+      opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-nav__link {
+    box-sizing: border-box;
+    border-bottom: none;
+    border-left: @grey-border;
+    outline: @show;
+
+    &--search {
+      width: 84px;
+      font-size: 0;
+      padding: 32px;
+    }
+    &--cart {
+      width: 264px;
+      padding: 32px 0 32px 75px;
+    }
+  }
 }

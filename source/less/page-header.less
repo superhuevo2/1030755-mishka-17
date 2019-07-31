@@ -2,9 +2,49 @@
   .font-property(17px, 24px);
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+    border-bottom: @grey-border;
+  }
 }
 
 .page-header__logo {
   margin: 0 auto;
   height: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    margin: 0;
+    width: 168px;
+    height: 88px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__navigation {
+    width: 350px;
+  }
+}
+
+.page-header__extra-info {
+  .font-property(15px, 24px, 400, @content-color);
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__extra-info {
+    position: absolute;
+    right: 0;
+    bottom: -64px;
+    display: block;
+  }
 }
