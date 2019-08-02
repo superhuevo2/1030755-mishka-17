@@ -1,10 +1,40 @@
 .contacts {
   padding-top: 40px;
-  padding-bottom: 30px;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 60px;
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+    width: 1150px;
+  }
 }
 
 .contacts__wrapper {
-  padding: 0 30px;
+  margin: 0 auto;
+  width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    margin: 0;
+    padding-left: 175px;
+    width: 525px;
+    box-sizing: border-box;
+  }
 }
 
 .contacts__title {
@@ -13,13 +43,66 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    .font-property(43px, 50px);
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title {
+    .font-property(53px, 57px);
+  }
+}
+
 .contacts__list {
   .font-property(15px, 30px, 400, @content-color);
   margin-bottom: 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    .font-property(17px, 30px, 400, @content-color);
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @tablet-width) { // -webkit-border-horizontal-spacing съедает 4 пикселя, как убрать?
+  .contacts__table {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__table {
+    display: table;
+  }
+}
+
 .contacts__field {
   width: 75px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__field {
+    vertical-align: top;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__value {
+    margin-left: 35px;
+    width: 225px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__value {
+    margin: 0;
+    width: 225px;
+  }
 }
 
 .contacts__mail-link {
@@ -29,10 +112,26 @@
 }
 
 .contacts__map {
-  width: 100%;
   margin-bottom: 40px;
 }
 
+@media (min-width: @desktop-width) {
+  .contacts__map {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 525px;
+    height: 460px;
+  }
+}
+
 .contacts__write-us {
-  margin: 0 30px;
+  margin: 0 auto;
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__write-us {
+    margin: 0 0 0 175px;
+  }
 }
