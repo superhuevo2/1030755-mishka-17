@@ -1,10 +1,56 @@
 .review {
-  padding: 25px 30px 35px;
+  width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    position: relative;
+    padding: 80px 0 45px;
+    width: 668px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50px;
+      z-index: -1;
+      width: 350px;
+      height: 100%;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: round;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    padding: 75px 0 95px 175px;
+    width: 1050px;
+    box-sizing: border-box;
+
+    &::before {
+      left: 0;
+    }
+  }
 }
 
 .review__title {
   .font-property();
   margin: 0 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .review__title {
+    .font-property(43px, 50px);
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__title {
+    .font-property(53px, 57px);
+    margin-bottom: 50px;
+  }
 }
 
 .review__item {
@@ -16,17 +62,39 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .review__message {
+    margin-bottom: 60px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__message {
+    margin-bottom: 40px;
+    width: 780px;
+  }
+}
+
 .review__name {
   .font-property(17px, 20px);
 }
 
 .review__contact {
-  .font-property(15px, 30px, 400, @content-color);
+  .font-property(17px, 30px, 400, @content-color);
   margin-bottom: 30px;
 }
 
 .review__button-wrapper {
   display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .review__button-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .review__button {
@@ -45,5 +113,21 @@
 
   &--forward {
     background-image: url("../img/icon-right-arrow.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review__button {
+    margin: 0;
+    width: 84px;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review__write {
+    position: absolute;
+    top: 60px;
+    right: 0;
   }
 }
