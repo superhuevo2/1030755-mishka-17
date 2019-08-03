@@ -1,42 +1,121 @@
 .product {
   width: 260px;
+  border: @grey-border;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    position: relative;
+    padding-left: 334px;
+    box-sizing: border-box;
+    width: 668px;
+    border: @grey-border;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product {
+    padding: 0;
+    width: 315px;
+  }
 }
 
 .product__link {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
-.product__name-wrapper {
-  order: 1;
+@media (min-width: @tablet-width) {
+  .product__link {
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__link {
+    padding-top: 0;
+  }
 }
 
 .product__name {
   .font-property(17px, 24px);
-  margin: 0 30px 25px;
+  margin: 0 25px;
 }
 
 .product__description {
   .font-property(13px, 30px, 400, @content-color);
-  margin: 0 30px;
+  margin: 0 25px;
   padding-bottom: 25px;
-  border-bottom: @grey-border;
+  width: 205px;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .product__description {
+    width: 270px;
+    min-height: 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__description {
+    min-height: auto;
+    padding-bottom: 100px;
+  }
 }
 
 .product__image {
   margin-bottom: 25px;
 }
 
+@media (min-width: @tablet-width) {
+  .product__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 334px;
+    height: 334px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__image {
+    position: static;
+    margin-bottom: 25px;
+    width: 315px;
+    height: 460px;
+  }
+}
+
 .product__price-wrapper {
   display: flex;
   align-items: center;
-  border-bottom: @grey-border;
+  margin: 0 25px;
+  border-top: @grey-border;
+}
+
+@media (min-width: @tablet-width) {
+  .product__price-wrapper {
+    margin: 0 35px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__price-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 27px;
+    margin: 0;
+    width: 261px;
+  }
 }
 
 .product__price {
   .font-property(15px, 24px);
-  margin-left: 30px;
 }
 
 .product__button {
@@ -45,5 +124,5 @@
   height: 75px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
-  background-position: 25px 25px;
+  background-position: 50px 25px;
 }
