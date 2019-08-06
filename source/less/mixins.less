@@ -5,8 +5,18 @@
 }
 
 .font-property(@font-size: 25px, @line-height: 30px, @font-weight: 700, @color: @main-color) {
+  font-family: @body-font-family;
   font-size: @font-size;
   line-height: @line-height;
   font-weight: @font-weight;
   color: @color;
+}
+
+.waveborder(@height: 6px, @bg: @bg-wave-line) { // миксин для волнистой линии имеет смысл использовать или лучше без него обойтись?
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: @height;
+  background-image: @bg; // bg-zigzag-fill.svg для чего нужна вторая картинка?
+  background-size: contain;
 }

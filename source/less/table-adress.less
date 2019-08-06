@@ -1,0 +1,94 @@
+.table-adress {
+  display: table;
+  .font-property(15px, 30px, 400, @content-color);
+}
+
+@media (min-width: @tablet-width) {
+  .table-adress {
+    .font-property(17px, 30px, 400, @content-color);
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-adress {
+    display: table;
+  }
+}
+
+.table-adress__row-email {
+  display: table-row;
+}
+
+@media (min-width: @tablet-width) {
+  .table-adress__row-email {
+    display: flex;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-adress__row-email {
+    display: table-row;
+  }
+}
+
+.table-adress__row-adress {
+  display: table-row;
+}
+
+@media (min-width: @tablet-width) {
+  .table-adress__row-adress {
+    display: flex;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-adress__row-adress {
+    display: table-row;
+  }
+}
+
+.table-adress__field {
+  display: table-cell;
+  width: 75px;
+}
+
+@media (min-width: @tablet-width) {
+  .table-adress__field {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-adress__field {
+    display: table-cell;
+  }
+}
+
+.table-adress__value {
+  display: table-cell;
+  width: 185px;
+}
+
+@media (min-width: @tablet-width) {
+  .table-adress__value {
+    display: block;
+    width: 225px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-adress__value {
+    display: table-cell;
+    width: 225px;
+  }
+}
+
+.table-adress__mail-link {
+  color: @content-color;
+  text-decoration: none;
+  border-bottom: 1px solid @content-color;
+}

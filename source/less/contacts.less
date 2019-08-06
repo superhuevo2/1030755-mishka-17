@@ -1,19 +1,29 @@
 .contacts {
-  padding-top: 40px;
-  width: 320px;
+  position: relative;
+
+  &::before {
+    .waveborder();
+    top: -40px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    padding-top: 60px;
-    width: 768px;
+    &::before {
+      bottom: -70px;
+      height: 8px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
-    position: relative;
-    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      height: 10px;
+    }
   }
 }
 
@@ -31,7 +41,7 @@
 @media (min-width: @desktop-width) {
   .contacts__wrapper {
     margin: 0;
-    padding-left: 175px;
+    padding: 0 0 70px 175px;
     width: 525px;
     box-sizing: border-box;
   }
@@ -56,34 +66,16 @@
   }
 }
 
-.contacts__list {
-  .font-property(15px, 30px, 400, @content-color);
+.contacts__table {
   margin-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
-  .contacts__list {
-    .font-property(17px, 30px, 400, @content-color);
+  .contacts__table {
     margin-bottom: 60px;
   }
 }
 
-@media (min-width: @tablet-width) { // -webkit-border-horizontal-spacing съедает 4 пикселя, как убрать?
-  .contacts__table {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contacts__table {
-    display: table;
-  }
-}
-
-.contacts__field {
-  width: 75px;
-}
 
 @media (min-width: @tablet-width) {
   .contacts__field {
@@ -105,22 +97,14 @@
   }
 }
 
-.contacts__mail-link {
-  color: @content-color;
-  text-decoration: none;
-  border-bottom: 1px solid @content-color;
-}
-
 .contacts__map {
   margin-bottom: 40px;
 }
 
 @media (min-width: @desktop-width) {
   .contacts__map {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0;
+    align-self: flex-end;
+    margin-bottom: 0;
     width: 525px;
     height: 460px;
   }
@@ -128,10 +112,14 @@
 
 .contacts__write-us {
   margin: 0 auto;
+  width: 260px;
 }
 
 @media (min-width: @desktop-width) {
   .contacts__write-us {
+    position: absolute;
+    bottom: 0;
     margin: 0 0 0 175px;
+    width: 230px;
   }
 }

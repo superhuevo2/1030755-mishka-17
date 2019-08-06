@@ -60,6 +60,7 @@
           <h2 class="product-week__title">Вязаные корзинки</h2>
           <p class="product-week__section">Товар недели</p>
         </header>
+        <div class="product-week__wrapper">
           <p class="product-week__info">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
           </p>
@@ -78,60 +79,59 @@
               <td class="product-week__value">15 см</td>
             </tr>
           </table>
-          <a class="product-week__image-link" href="knitting-baskets">
-            <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки"> <!--нужно ли изображение в тег figure оборачивать?-->
+          <a class="product-week__image-link" href="knitting-baskets.html">
+            <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
           </a>
           <span class="product-week__price">Цена: 990 руб.</span>
-          <a class="product-week__order button button--order" href="cart.html">Заказать</a>
+          <a class="product-week__order button" href="cart.html">Заказать</a>
+        </div>
       </section>
-      <div class="page-main__wrapper">
-        <section class="page-main__about about">
-          <h2 class="about__title">Коротко о нас:</h2>
-          <ul class="about__list">
-            <li class="about__item about__item--materials">Экологические чистые материалы</li>
-            <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
-            <li class="about__item about__item--like">Увеличивает лайки на вотографиях</li>
-            <li class="about__item about__item--handmade">Связано вручную с любовью и умением</li>
-            <li class="about__item about__item--native">Поддержка отечественного производителя</li>
-            <li class="about__item about__item--pack">Поставляется в подарочной упаковке</li>
-          </ul>
-        </section>
-        <section class="page-main__review review">
-          <h2 class="review__title">Отзывы</h2>
-          <blockquote class="review__item">
-            <p class="review__message">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <p class="review__name">Анастасия Красильникова</p>
-            <p class="review__contact">@misssssiskras</p>
-          </blockquote>
-          <div class="review__button-wrapper">
-            <button class="review__button review__button--back">Назад</button>
-            <button class="review__button review__button--forward">Вперед</button>
-          </div>
-          <a class="review__write button button--feedback" href="feedback.html">Написать</a>
-        </section>
-      </div>
+      <section class="page-main__about about">
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item about__item--materials">Экологические чистые материалы</li>
+          <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
+          <li class="about__item about__item--like">Увеличивает лайки на вотографиях</li>
+          <li class="about__item about__item--handmade">Связано вручную с любовью и умением</li>
+          <li class="about__item about__item--native">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--pack">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="page-main__review review">
+        <h2 class="review__title">Отзывы</h2>
+        <blockquote class="review__item">
+          <p class="review__message">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </p>
+          <p class="review__name">Анастасия Красильникова</p>
+          <p class="review__contact">@misssssiskras</p>
+        </blockquote>
+        <div class="review__button-wrapper">
+          <button class="review__button review__button--back">Назад</button>
+          <button class="review__button review__button--forward">Вперед</button>
+        </div>
+        <a class="review__write button" href="feedback.html">Написать</a>
+      </section>
       <section class="page-main__contacts contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__list">
-            <tbody class="contacts__table">
-              <tr>
-                <td class="contacts__field">e-mail:</td>
-                <td class="contacts__value"><a class="contacts__mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-              </tr>
-              <tr>
-                <td class="contacts__field">адрес:</td>
-                <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="contacts__table table-adress">
+            <div class="table-adress__row-email">
+              <p class="table-adress__field">e-mail:</p>
+              <p class="table-adress__value">
+                <a class="table-adress__mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </p>
+            </div>
+            <div class="table-adress__row-adress">
+              <p class="table-adress__field">адрес:</p>
+              <p class="table-adress__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            </div>
+          </div>
         </div>
         <div class="contacts__map map">
           <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Как нас найти">
         </div>
-        <a class="contacts__write-us button button--writeus" href="writeus.html">Напишите нам</a>
+        <a class="contacts__write-us button" href="writeus.html">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
