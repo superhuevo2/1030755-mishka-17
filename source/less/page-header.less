@@ -12,7 +12,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 668px;
-    border-bottom: @grey-border;
   }
 }
 
@@ -23,15 +22,12 @@
 }
 
 .page-header__logo {
-  margin: 0 auto;
-  height: 80px;
+  margin: 27px auto;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    margin: 0;
-    width: 120px;
-    height: 50px;
+    margin: 20px 0;
   }
 }
 
@@ -39,6 +35,7 @@
   .page-header__logo {
     position: absolute;
     left: 450px;
+    z-index: 1;
     width: 150px;
     height: 75px;
   }
@@ -65,7 +62,8 @@
   .page-header__extra-info {
     position: absolute;
     right: 0;
-    bottom: -64px;
+    bottom: -50px;
     display: block;
+    margin: 0;
   }
 }
