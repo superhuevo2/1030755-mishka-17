@@ -74,7 +74,30 @@
 
 @media (min-width: @tablet-width) {
   .product-category__item {
+    position: relative;
     width: 334px;
+
+    &--interior .product-category__link::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      width: 41px;
+      height: 63px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--toys .product-category__link::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      width: 61px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -91,4 +114,10 @@
   box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .product-category__link {
+    padding: 25px 350px 25px 30px;
+  }
 }

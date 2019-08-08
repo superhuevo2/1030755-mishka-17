@@ -2,8 +2,13 @@
   position: relative;
 
   &::before {
-    .waveborder();
+    content: "";
+    position: absolute;
     bottom: -45px;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
   }
 }
 
@@ -100,6 +105,9 @@
 @media (min-width: @tablet-width) {
   .product-week__wrapper {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 668px;
   }
 }
@@ -184,12 +192,9 @@
   width: 260px;
 }
 
-@media (min-width: @tablet-width) { /* правильно ли здесь сделать абсолютное позиционирование? */
+@media (min-width: @tablet-width) {
   .product-week__image-link {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: auto;
+    order: 1;
   }
 }
 

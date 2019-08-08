@@ -2,8 +2,13 @@
   position: relative;
 
   &::before {
-    .waveborder();
+    content: "";
+    position: absolute;
     top: -40px;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
   }
 }
 
