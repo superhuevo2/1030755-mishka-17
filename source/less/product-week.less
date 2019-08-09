@@ -15,6 +15,7 @@
 @media (min-width: @tablet-width) {
   .product-week {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
@@ -54,9 +55,7 @@
 
 @media (min-width: @desktop-width) {
   .product-week__general {
-    position: absolute;
-    top: 50px;
-    left: 175px;
+    position: relative;
     margin: 0;
     width: 1050px;
     box-sizing: border-box;
@@ -215,6 +214,7 @@
 
 .product-week__image-link {
   display: block;
+  order: 1;
   margin: 0 auto 25px;
   width: 260px;
   height: 315px;

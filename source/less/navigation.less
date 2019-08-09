@@ -1,5 +1,21 @@
-.navigation {
-  position: relative;
+@media (max-width: @mobile-width-only) {
+  .navigation {
+    &--opened .navigation__wrapper {
+      display: block;
+    }
+
+    &--closed .navigation__wrapper {
+      display: none;
+    }
+
+    &--nojs .navigation__button {
+      display: none;
+    }
+
+    &--nojs .navigation__wrapper {
+      display: block;
+    }
+  }
 }
 
 .navigation__button {
