@@ -16,6 +16,8 @@
   .product-week {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 668px;
 
     &::before {
@@ -52,10 +54,10 @@
 
 @media (min-width: @desktop-width) {
   .product-week__general {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 60px;
-    padding-left: 175px;
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    margin: 0;
     width: 1050px;
     box-sizing: border-box;
   }
@@ -63,12 +65,13 @@
 
 .product-week__title {
   .font-property();
-  margin: 20px 0;
+  margin: 0 0 10px;
 }
 
 @media (min-width: @tablet-width) {
   .product-week__title {
     .font-property(43px, 50px);
+    margin: 0;
     width: 500px;
   }
 }
@@ -80,6 +83,7 @@
 }
 
 .product-week__section {
+  margin: 0;
   .font-property(17px, 20px, 700, #63d1bb);
   text-transform: uppercase;
 }
@@ -95,8 +99,9 @@
 @media (min-width: @desktop-width) {
   .product-week__section {
     position: absolute;
-    top: 0;
-    left: 40px;
+    top: 14px;
+    left: -130px;
+    margin: 0;
     text-align: center;
   }
 }
@@ -109,13 +114,14 @@
 @media (min-width: @tablet-width) {
   .product-week__wrapper {
     position: relative;
+    margin: 0;
     width: 290px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product-week__wrapper {
-    padding-left: 175px;
+    padding: 160px 0 0 175px;
     width: 525px;
     box-sizing: border-box;
   }
@@ -170,6 +176,11 @@
   border-bottom: @grey-border;
 }
 
+.product-week__price-wrapper {
+  margin: 0 auto;
+  width: 260px;
+}
+
 @media (min-width: @tablet-width) {
   .product-week__price-wrapper {
     position: absolute;
@@ -189,8 +200,7 @@
 .product-week__price {
   .font-property(17px, 24px);
   display: block;
-  margin: 0;
-  padding: 25px 0;
+  margin-bottom: 25px;
   width: 260px;
   color: @content-color;
   text-align: center;
@@ -205,13 +215,23 @@
 
 .product-week__image-link {
   display: block;
-  margin: 0;
+  margin: 0 auto 25px;
   width: 260px;
+  height: 315px;
 }
 
 @media (min-width: @tablet-width) {
   .product-week__image-link {
-    width: auto;
+    margin: 0;
+    width: 335px;
+    height: 405px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-week__image-link {
+    width: 525px;
+    height: 635px;
   }
 }
 
