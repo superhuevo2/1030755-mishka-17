@@ -56,8 +56,8 @@
 @media (min-width: @desktop-width) {
   .product-week__general {
     position: relative;
-    margin: 0;
-    width: 1050px;
+    margin: 0 0 0 175px;
+    width: 700px;
     box-sizing: border-box;
   }
 }
@@ -120,8 +120,9 @@
 
 @media (min-width: @desktop-width) {
   .product-week__wrapper {
-    padding: 160px 0 0 175px;
-    width: 525px;
+    margin: 160px 0 0 175px;
+    //padding: 160px 0 0 175px;
+    width: 350px;
     box-sizing: border-box;
   }
 }
@@ -182,17 +183,18 @@
 
 @media (min-width: @tablet-width) {
   .product-week__price-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    //position: absolute;
+    //bottom: 0;
+    //left: 0;
+    margin: 0 auto 0 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product-week__price-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 175px;
+    //position: absolute;
+    //bottom: 0;
+    margin-left: 175px;
   }
 }
 
@@ -214,7 +216,6 @@
 
 .product-week__image-link {
   display: block;
-  order: 1;
   margin: 0 auto 25px;
   width: 260px;
   height: 315px;
