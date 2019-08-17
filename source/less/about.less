@@ -1,5 +1,8 @@
-.about {
-  padding: 30px;
+@media (min-width: @desktop-width) {
+  .about {
+    padding: 0 175px;
+    box-sizing: border-box;
+  }
 }
 
 .about__title {
@@ -8,12 +11,39 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .about__title {
+    .font-property(43px, 50px);
+  }
+}
+
 .about__list {
   .lists-reset();
 }
 
+@media (min-width: @tablet-width) {
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .about__item {
   .font-property(17px, 20px);
-  margin-bottom: 25px;
-  padding-top: 50px;
+  position: relative;
+  padding-top: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .about__item {
+    .font-property(20px, 22px);
+    width: 334px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__item {
+    width: 300px;
+  }
 }
