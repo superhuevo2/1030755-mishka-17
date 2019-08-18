@@ -1,0 +1,87 @@
+@media (min-width: @tablet-width) {
+  .color-filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .color-filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 875px;
+  }
+}
+
+.color-filter__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+  .color-filter__item {
+    margin: 0 50px 40px 0;
+    width: 225px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .color-filter__item {
+    margin: 0 100px 50px 0;
+    width: 225px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.color-filter__label {
+  position: relative;
+  padding-left: 60px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 21px);
+    left: 0;
+    border: 2px solid @main-color;
+    width: 38px;
+    height: 38px;
+  }
+
+  &:hover::before,
+  &:active::before {
+    border-color: @input-color;
+  }
+}
+
+.color-filter__input:checked + .color-filter__label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 14px);
+    left: 4px;
+    width: 33px;
+    height: 28px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
