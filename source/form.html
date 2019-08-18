@@ -14,7 +14,7 @@
           <img class="logo__image" src="img/logo-mobile.svg" width="86" height="36" alt="Интернет-магазин игрушек ручной работы">
         </picture>
       </a>
-      <nav class="page-header__navigation navigation">
+      <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
         <button class="navigation__button">Открыть меню</button>
         <div class="navigation__wrapper">
           <ul class="navigation__site-nav site-nav">
@@ -27,10 +27,20 @@
           </ul>
           <ul class="navigation__user-nav user-nav">
             <li class="user-nav__item user-nav__item--search">
-              <a class="user-nav__link" href="search.html">Поиск по сайту</a>
+              <a class="user-nav__link" href="search.html">
+                <svg class="user-nav__icon user-nav__icon--search" x="0px" y="0px" width="17.6px" height="17.6px">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                Поиск по сайту
+              </a>
             </li>
             <li class="user-nav__item user-nav__item--cart">
-              <a class="user-nav__link" href="cart.html">Корзина: пока пуста</a>
+              <a class="user-nav__link" href="cart.html">
+                <svg class="user-nav__icon user-nav__icon--cart" x="0px" y="0px" width="20.294px" height="18.849px">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                Корзина: пока пуста
+              </a>
             </li>
           </ul>
           <ul class="navigation__catalog-nav catalog-nav">
@@ -47,29 +57,151 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
-
+      <section class="page-main__order order">
+        <p class="order__description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form class="order__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form__wrapper type-filter__wrapper">
+            <fieldset class="form__field type-filter__wrapper">
+              <legend class="form__title type-filter__title">Тип</legend>
+              <ul class="form__list type-filter__list">
+                <li class="form__item type-filter__item">
+                  <input class="type-filter__input visually-hidden" type="radio" name="type" value="accessory" id="accessory">
+                  <label class="type-filter__label" for="accessory">Аксессуар для интерьера</label>
+                </li>
+                <li class="form__item type-filter__item">
+                  <input class="type-filter__input visually-hidden" type="radio" name="type" value="toy" id="toy">
+                  <label class="type-filter__label" for="toy">Аксессуар для интерьера</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__wrapper form__wrapper--grey color-filter">
+            <fieldset class="form__field color-filter__wrapper">
+              <legend class="form__title color-filter__title">Цвет</legend>
+              <ul class="form__list color-filter__list">
+                <li class="form__item color-filter__item">
+                  <input class="color-filter__input visually-hidden" type="checkbox" name="white" id="white" checked>
+                  <label class="color-filter__label" for="white">Белый</label>
+                </li>
+                <li class="form__item color-filter__item">
+                  <input class="color-filter__input visually-hidden" type="checkbox" name="grey" id="grey">
+                  <label class="color-filter__label" for="grey">Серый</label>
+                </li>
+                <li class="form__item color-filter__item">
+                  <input class="color-filter__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+                  <label class="color-filter__label" for="tiffany">"Тиффани"</label>
+                </li>
+                <li class="form__item color-filter__item">
+                  <input class="color-filter__input visually-hidden" type="checkbox" name="black" id="black">
+                  <label class="color-filter__label" for="black">Черный</label>
+                </li>
+                <li class="form__item color-filter__item">
+                  <input class="color-filter__input visually-hidden" type="checkbox" name="pink" id="pink">
+                  <label class="color-filter__label" for="pink">Розовый</label>
+                </li>
+                <li class="form__item color-filter__item">
+                  <input class="color-filter__input visually-hidden" type="checkbox" name="orange" id="orange">
+                  <label class="color-filter__label" for="orange">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__wrapper name-filter">
+            <fieldset class="form__field name-filter__wrapper">
+              <legend class="form__title name-filter__title">Фио</legend>
+              <ul class="form__list name-filter__list">
+                <li class="form__item name-filter__item">
+                  <label class="name-filter__label" for="name">Имя:</label>
+                  <input class="name-filter__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+                </li>
+                <li class="form__item name-filter__item">
+                  <label class="name-filter__label" for="surname">Фамилия:</label>
+                  <input class="name-filter__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+                </li>
+                <li class="form__item name-filter__item">
+                  <label class="name-filter__label" for="parents-name">Отчество:</label>
+                  <input class="name-filter__input" type="text" name="parents-name" id="parents-name" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__wrapper contacts-filter">
+            <fieldset class="form__field contacts-filter__wrapper">
+              <legend class="form__title contacts-filter__title">Тел</legend>
+              <input class="contacts-filter__input" type="text" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*">
+              <svg class="contacts-filter__icon" x="0px" y="0px" width="32px" height="32px">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              <label class="visually-hidden" for="phone">Телефон</label>
+            </fieldset>
+            <fieldset class="form__field contacts-filter__wrapper">
+              <legend class="form__title contacts-filter__title">E-mail</legend>
+              <input class="contacts-filter__input" type="text" name="mail" id="mail" placeholder="Ваш Email*">
+              <svg class="contacts-filter__icon" x="0px" y="0px" width="32px" height="32px">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+              <label class="visually-hidden" for="mail">E-mail</label>
+            </fieldset>
+          </div>
+          <div class="form__wrapper extra-filter">
+            <fieldset class="form__field extra-filter__wrapper">
+              <legend class="form__title extra-filter__title">Доп</legend>
+              <textarea class="extra-filter__input" name="comment" id="extra" rows="4">Опишите все ваши пожелания к заказу</textarea>
+              <label class="visually-hidden" for="extra">Дополнительная информация</label>
+            </fieldset>
+          </div>
+          <div class="form__btn-wrapper">
+            <p class="form__extra-info"><sup>*</sup>Поля обязательны для заполнения</p>
+            <button class="form__button button" type="submit">Отправить заказ</button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин игрушек ручной работы">
+        <a class="page-footer__logo logo" href="index.html"> <!--здесь тег а подходит или лучше в див обернуть ссылку?-->
+          <svg class="logo__footer-image" x="0px" y="0px" width="101.615px" height="34.056px">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
         <div class="page-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link socials__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a>
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="socials__icon" x="0px" y="0px" width="21.769px" height="21.334px">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--facebook" href="#"><span class="visually-hidden">Фейсбоок</span></a>
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Фейсбоок</span>
+                <svg class="socials__icon" x="0px" y="0px" width="14.962px" height="27.718px">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="socials__icon" x="0px" y="0px" width="23.494px" height="20.168px">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Академия</span></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
+            <span class="visually-hidden">HTML Академия</span>
+            <svg class="copyright__image" x="0px" y="0px" width="27.943px" height="34.09px">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

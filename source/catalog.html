@@ -27,10 +27,20 @@
           </ul>
           <ul class="navigation__user-nav user-nav">
             <li class="user-nav__item user-nav__item--search">
-              <a class="user-nav__link" href="search.html">Поиск по сайту</a>
+              <a class="user-nav__link" href="search.html">
+                <svg class="user-nav__icon user-nav__icon--search" x="0px" y="0px" width="17.6px" height="17.6px">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                Поиск по сайту
+              </a>
             </li>
             <li class="user-nav__item user-nav__item--cart">
-              <a class="user-nav__link" href="cart.html">Корзина: пока пуста</a>
+              <a class="user-nav__link" href="cart.html">
+                <svg class="user-nav__icon user-nav__icon--cart" x="0px" y="0px" width="20.294px" height="18.849px">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                Корзина: пока пуста
+              </a>
             </li>
           </ul>
           <ul class="navigation__catalog-nav catalog-nav">
@@ -60,7 +70,12 @@
               </p>
               <div class="product__price-wrapper">
                 <span class="product__price">1200 руб.</span>
-                <a class="product__button" href="cart.html"><span class="visually-hidden">Добавить в корзину</span></a>
+                <a class="product__button" href="cart.html">
+                  <svg class="product__icon-cart" x="0px" y="0px" width="20.294px" height="19.849px">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
               </div>
             </div>
             <a class="product__image-link" href="product-1.html">
@@ -81,7 +96,12 @@
               </p>
               <div class="product__price-wrapper">
                 <span class="product__price">690 руб.</span>
-                <a class="product__button" href="cart.html"><span class="visually-hidden">Добавить в корзину</span></a>
+                <a class="product__button" href="cart.html">
+                  <svg class="product__icon-cart" x="0px" y="0px" width="20.294px" height="19.849px">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
               </div>
             </div>
             <a class="product__image-link" href="product-2.html">
@@ -102,7 +122,12 @@
               </p>
               <div class="product__price-wrapper">
                 <span class="product__price">1500 руб.</span>
-                <a class="product__button" href="cart.html"><span class="visually-hidden">Добавить в корзину</span></a>
+                <a class="product__button" href="cart.html">
+                  <svg class="product__icon-cart" x="0px" y="0px" width="20.294px" height="19.849px">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
               </div>
             </div>
             <a class="product__image-link" href="product-3.html">
@@ -121,25 +146,47 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин игрушек ручной работы">
+        <a class="page-footer__logo logo" href="index.html"> <!--здесь тег а подходит или лучше в див обернуть ссылку?-->
+          <svg class="logo__footer-image" x="0px" y="0px" width="101.615px" height="34.056px">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
         <div class="page-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link socials__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a>
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="socials__icon" x="0px" y="0px" width="21.769px" height="21.334px">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Фейсбоок</span>
+                <svg class="socials__icon" x="0px" y="0px" width="14.962px" height="27.718px">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="socials__icon" x="0px" y="0px" width="23.494px" height="20.168px">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Академия</span></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
+            <span class="visually-hidden">HTML Академия</span>
+            <svg class="copyright__image" x="0px" y="0px" width="27.943px" height="34.09px">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
