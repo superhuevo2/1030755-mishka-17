@@ -201,7 +201,8 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo">
-          <svg class="logo__footer-image" width="102" height="35" alt="Интернет-магазин игрушек ручной работы">
+          <span class="visually-hidden">Интернет-магазин игрушек ручной работы</span>
+          <svg class="logo__footer-image" width="102" height="35">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
@@ -217,7 +218,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#">
-                <span class="visually-hidden">Фейсбоок</span>
+                <span class="visually-hidden">Фейсбук</span>
                 <svg class="socials__icon" width="15" height="28">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
@@ -247,16 +248,24 @@
     <div class="modal-cart">
       <h2 class="modal-cart__title">Добавить в корзину</h2>
       <form class="modal-cart__form size-form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="size-form__field">
+        <fieldset class="size-form__wrapper">
           <legend class="size-form__title">Выберете размер</legend>
-          <input class="size-form__radio" type="radio" name="size" value="s" id="s-size">
-          <label class="size-form__label" for="s-size">S</label>
-          <input class="size-form__radio" type="radio" name="size" value="m" id="m-size">
-          <label class="size-form__label" for="m-size">M</label>
-          <input class="size-form__radio" type="radio" name="size" value="l" id="l-size">
-          <label class="size-form__label" for="l-size">L</label>
+          <ul class="size-form__list">
+            <li class="size-form__item">
+              <input class="size-form__radio visually-hidden" type="radio" name="size" value="s" id="s-size">
+              <label class="size-form__label" for="s-size">S</label>
+            </li>
+            <li class="size-form__item">
+              <input class="size-form__radio visually-hidden" type="radio" name="size" value="m" id="m-size">
+              <label class="size-form__label" for="m-size">M</label>
+            </li>
+            <li class="size-form__item">
+              <input class="size-form__radio visually-hidden" type="radio" name="size" value="l" id="l-size">
+              <label class="size-form__label" for="l-size">L</label>
+            </li>
+          </ul>
         </fieldset>
-        <button class="size-form__button" type="submit">Добавить</button>
+        <button class="button size-form__button" type="submit">Добавить</button>
       </form>
     </div>
     <div class="overlay"></div>

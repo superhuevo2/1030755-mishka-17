@@ -12,11 +12,16 @@
       width: 350px;
       height: 100%;
       background-image: url("../img/review@1x.jpg");
-
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/review@1x.jpg");
-      }
       background-repeat: round;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) and (min-resolution: @retina-dpi),
+  (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
+  .review {
+    &::before {
+      background-image: url("../img/review@1x.jpg");
     }
   }
 }

@@ -63,7 +63,7 @@
         </p>
         <form class="order__form form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__wrapper">
-            <fieldset class="form__field">
+            <fieldset class="form__inner">
               <legend class="form__title">Тип</legend>
               <ul class="form__list form-list--product-type">
                 <li class="form__item form__item--product-type radio">
@@ -78,7 +78,7 @@
             </fieldset>
           </div>
           <div class="form__wrapper form__wrapper--grey">
-            <fieldset class="form__field">
+            <fieldset class="form__inner">
               <legend class="form__title">Цвет</legend>
               <ul class="form__list form__list--color">
                 <li class="form__item form__item--color checkbox">
@@ -109,7 +109,7 @@
             </fieldset>
           </div>
           <div class="form__wrapper">
-            <fieldset class="form__field">
+            <fieldset class="form__inner">
               <legend class="form__title">Фио</legend>
               <ul class="form__list form__list--client-name">
                 <li class="form__item form__item--client-name field">
@@ -128,7 +128,7 @@
             </fieldset>
           </div>
           <div class="form__wrapper  form__wrapper--grey">
-            <fieldset class="form__field form__field--contacts form__field--phone">
+            <fieldset class="form__inner form__inner--contacts form__inner--phone">
               <legend class="form__title">Тел</legend>
               <div class="field">
                 <input class="field__input field__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
@@ -138,7 +138,7 @@
                 <label class="visually-hidden" for="phone">Телефон</label>
               </div>
             </fieldset>
-            <fieldset class="form__field form__field--contacts">
+            <fieldset class="form__inner form__inner--contacts">
               <legend class="form__title">E-mail</legend>
               <div class="field">
                 <input class="field__input field__input--contacts" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
@@ -150,7 +150,7 @@
             </fieldset>
           </div>
           <div class="form__wrapper extra-filter">
-            <fieldset class="form__field">
+            <fieldset class="form__inner">
               <legend class="form__title extra-filter__title">Доп</legend>
               <div class="field">
                 <textarea class="field__input field__input--textarea" name="comment" id="extra">Опишите все ваши пожелания к заказу</textarea>
@@ -168,7 +168,8 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo" href="index.html">
-          <svg class="logo__footer-image" width="102" height="35" alt="Интернет-магазин игрушек ручной работы">
+          <span class="visually-hidden">Интернет-магазин игрушек ручной работы</span>
+          <svg class="logo__footer-image" width="102" height="35">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
@@ -184,7 +185,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#">
-                <span class="visually-hidden">Фейсбоок</span>
+                <span class="visually-hidden">Фейсбук</span>
                 <svg class="socials__icon" width="15" height="28">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
