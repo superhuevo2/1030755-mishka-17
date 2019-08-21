@@ -28,7 +28,7 @@
           <ul class="navigation__user-nav user-nav">
             <li class="user-nav__item user-nav__item--search">
               <a class="user-nav__link" href="search.html">
-                <svg class="user-nav__icon user-nav__icon--search" x="0px" y="0px" width="17.6px" height="17.6px">
+                <svg class="user-nav__icon user-nav__icon--search" width="18" height="18">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
                 Поиск по сайту
@@ -36,7 +36,7 @@
             </li>
             <li class="user-nav__item user-nav__item--cart">
               <a class="user-nav__link" href="cart.html">
-                <svg class="user-nav__icon user-nav__icon--cart" x="0px" y="0px" width="20.294px" height="18.849px">
+                <svg class="user-nav__icon user-nav__icon--cart"width="21" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
@@ -62,94 +62,100 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="order__form form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="form__wrapper type-filter__wrapper">
-            <fieldset class="form__field type-filter__wrapper">
-              <legend class="form__title type-filter__title">Тип</legend>
-              <ul class="form__list type-filter__list">
-                <li class="form__item type-filter__item">
-                  <input class="type-filter__input visually-hidden" type="radio" name="type" value="accessory" id="accessory">
-                  <label class="type-filter__label" for="accessory">Аксессуар для интерьера</label>
+          <div class="form__wrapper">
+            <fieldset class="form__field">
+              <legend class="form__title">Тип</legend>
+              <ul class="form__list form-list--product-type">
+                <li class="form__item form__item--product-type radio">
+                  <input class="radio__input visually-hidden" type="radio" name="product-type" value="accessory" id="accessory">
+                  <label class="radio__label" for="accessory">Аксессуар для интерьера</label>
                 </li>
-                <li class="form__item type-filter__item">
-                  <input class="type-filter__input visually-hidden" type="radio" name="type" value="toy" id="toy">
-                  <label class="type-filter__label" for="toy">Аксессуар для интерьера</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="form__wrapper form__wrapper--grey color-filter">
-            <fieldset class="form__field color-filter__wrapper">
-              <legend class="form__title color-filter__title">Цвет</legend>
-              <ul class="form__list color-filter__list">
-                <li class="form__item color-filter__item">
-                  <input class="color-filter__input visually-hidden" type="checkbox" name="white" id="white" checked>
-                  <label class="color-filter__label" for="white">Белый</label>
-                </li>
-                <li class="form__item color-filter__item">
-                  <input class="color-filter__input visually-hidden" type="checkbox" name="grey" id="grey">
-                  <label class="color-filter__label" for="grey">Серый</label>
-                </li>
-                <li class="form__item color-filter__item">
-                  <input class="color-filter__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-                  <label class="color-filter__label" for="tiffany">"Тиффани"</label>
-                </li>
-                <li class="form__item color-filter__item">
-                  <input class="color-filter__input visually-hidden" type="checkbox" name="black" id="black">
-                  <label class="color-filter__label" for="black">Черный</label>
-                </li>
-                <li class="form__item color-filter__item">
-                  <input class="color-filter__input visually-hidden" type="checkbox" name="pink" id="pink">
-                  <label class="color-filter__label" for="pink">Розовый</label>
-                </li>
-                <li class="form__item color-filter__item">
-                  <input class="color-filter__input visually-hidden" type="checkbox" name="orange" id="orange">
-                  <label class="color-filter__label" for="orange">Оранжевый</label>
+                <li class="form__item form__item--product-type radio">
+                  <input class="radio__input visually-hidden" type="radio" name="product-type" value="toy" id="toy">
+                  <label class="radio__label" for="toy">Детская игрушка</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper name-filter">
-            <fieldset class="form__field name-filter__wrapper">
-              <legend class="form__title name-filter__title">Фио</legend>
-              <ul class="form__list name-filter__list">
-                <li class="form__item name-filter__item">
-                  <label class="name-filter__label" for="name">Имя:</label>
-                  <input class="name-filter__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+          <div class="form__wrapper form__wrapper--grey">
+            <fieldset class="form__field">
+              <legend class="form__title">Цвет</legend>
+              <ul class="form__list form__list--color">
+                <li class="form__item form__item--color checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="white" id="white" checked>
+                  <label class="checkbox__label" for="white">Белый</label>
                 </li>
-                <li class="form__item name-filter__item">
-                  <label class="name-filter__label" for="surname">Фамилия:</label>
-                  <input class="name-filter__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+                <li class="form__item form__item--color checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="grey" id="grey">
+                  <label class="checkbox__label" for="grey">Серый</label>
                 </li>
-                <li class="form__item name-filter__item">
-                  <label class="name-filter__label" for="parents-name">Отчество:</label>
-                  <input class="name-filter__input" type="text" name="parents-name" id="parents-name" placeholder="Отчество, если желаете">
+                <li class="form__item form__item--color checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+                  <label class="checkbox__label" for="tiffany">"Тиффани"</label>
+                </li>
+                <li class="form__item form__item--color checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="black" id="black">
+                  <label class="checkbox__label" for="black">Черный</label>
+                </li>
+                <li class="form__item form__item--color checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="pink" id="pink">
+                  <label class="checkbox__label" for="pink">Розовый</label>
+                </li>
+                <li class="form__item form__item--color checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="orange" id="orange">
+                  <label class="checkbox__label" for="orange">Оранжевый</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper contacts-filter">
-            <fieldset class="form__field contacts-filter__wrapper">
-              <legend class="form__title contacts-filter__title">Тел</legend>
-              <input class="contacts-filter__input" type="text" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*">
-              <svg class="contacts-filter__icon" x="0px" y="0px" width="32px" height="32px">
-                <use xlink:href="img/sprite.svg#icon-phone"></use>
-              </svg>
-              <label class="visually-hidden" for="phone">Телефон</label>
+          <div class="form__wrapper">
+            <fieldset class="form__field">
+              <legend class="form__title">Фио</legend>
+              <ul class="form__list form__list--client-name">
+                <li class="form__item form__item--client-name field">
+                  <label class="field__label" for="client-name">Имя:</label>
+                  <input class="field__input" type="text" name="client-name" id="client-name" placeholder="Введите ваше имя*" required>
+                </li>
+                <li class="form__item form__item--client-name field">
+                  <label class="field__label" for="client-surname">Фамилия:</label>
+                  <input class="field__input" type="text" name="client-surname" id="client-surname" placeholder="Укажите фамилию*" required>
+                </li>
+                <li class="form__item form__item--client-name field">
+                  <label class="field__label" for="client-parents-name">Отчество:</label>
+                  <input class="field__input" type="text" name="client-parents-name" id="parents-name" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
             </fieldset>
-            <fieldset class="form__field contacts-filter__wrapper">
-              <legend class="form__title contacts-filter__title">E-mail</legend>
-              <input class="contacts-filter__input" type="text" name="mail" id="mail" placeholder="Ваш Email*">
-              <svg class="contacts-filter__icon" x="0px" y="0px" width="32px" height="32px">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-              <label class="visually-hidden" for="mail">E-mail</label>
+          </div>
+          <div class="form__wrapper  form__wrapper--grey">
+            <fieldset class="form__field form__field--contacts form__field--phone">
+              <legend class="form__title">Тел</legend>
+              <div class="field">
+                <input class="field__input field__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
+                <svg class="field__icon" width="32px" height="32px">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+                <label class="visually-hidden" for="phone">Телефон</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__field form__field--contacts">
+              <legend class="form__title">E-mail</legend>
+              <div class="field">
+                <input class="field__input field__input--contacts" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
+                <svg class="field__icon" width="32px" height="32px">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+                <label class="visually-hidden" for="mail">E-mail</label>
+              </div>
             </fieldset>
           </div>
           <div class="form__wrapper extra-filter">
-            <fieldset class="form__field extra-filter__wrapper">
+            <fieldset class="form__field">
               <legend class="form__title extra-filter__title">Доп</legend>
-              <textarea class="extra-filter__input" name="comment" id="extra" rows="4">Опишите все ваши пожелания к заказу</textarea>
-              <label class="visually-hidden" for="extra">Дополнительная информация</label>
+              <div class="field">
+                <textarea class="field__input field__input--textarea" name="comment" id="extra">Опишите все ваши пожелания к заказу</textarea>
+                <label class="visually-hidden" for="extra">Дополнительная информация</label>
+              </div>
             </fieldset>
           </div>
           <div class="form__btn-wrapper">
@@ -161,8 +167,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo" href="index.html"> <!--здесь тег а подходит или лучше в див обернуть ссылку?-->
-          <svg class="logo__footer-image" x="0px" y="0px" width="101.615px" height="34.056px">
+        <a class="page-footer__logo logo" href="index.html">
+          <svg class="logo__footer-image" width="102" height="35" alt="Интернет-магазин игрушек ручной работы">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
@@ -171,7 +177,7 @@
             <li class="socials__item">
               <a class="socials__link" href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg class="socials__icon" x="0px" y="0px" width="21.769px" height="21.334px">
+                <svg class="socials__icon" width="22" height="22">
                   <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
               </a>
@@ -179,7 +185,7 @@
             <li class="socials__item">
               <a class="socials__link" href="#">
                 <span class="visually-hidden">Фейсбоок</span>
-                <svg class="socials__icon" x="0px" y="0px" width="14.962px" height="27.718px">
+                <svg class="socials__icon" width="15" height="28">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
               </a>
@@ -187,7 +193,7 @@
             <li class="socials__item">
               <a class="socials__link" href="#">
                 <span class="visually-hidden">Твиттер</span>
-                <svg class="socials__icon" x="0px" y="0px" width="23.494px" height="20.168px">
+                <svg class="socials__icon" width="24" height="21">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
               </a>
@@ -198,7 +204,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
             <span class="visually-hidden">HTML Академия</span>
-            <svg class="copyright__image" x="0px" y="0px" width="27.943px" height="34.09px">
+            <svg class="copyright__image" width="28" height="35">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
