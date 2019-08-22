@@ -1,0 +1,114 @@
+.how-made {
+  .font-property(13px, 24px, 400, @content-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: @grey-border;
+  border-bottom: @grey-border;
+}
+
+@media (min-width: @desktop-width) {
+  .how-made {
+    flex-direction: row;
+  }
+}
+
+.how-made__title {
+  .font-property(17px, 24px, 700, @main-color);
+  position: relative;
+  margin: 0 auto;
+  padding: 25px 0 25px 65px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .how-made__title {
+    margin: 0 auto;
+    padding: 35px 0 35px 65px;
+    width: 580px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how-made__title {
+    align-self: flex-start;
+    margin: 0 0 275px auto;
+    padding: 90px 100px 35px 60px;
+    width: 350px;
+  }
+}
+
+.how-made__icon {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  fill: @extra-color; // цвета для свг лучше задавать в html или и так нормально?
+}
+
+@media (min-width: @desktop-width) {
+  .how-made__icon {
+    left: 60px;
+  }
+}
+
+.how-made__video {
+  order: -1;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @desktop-width) {
+  .how-made__wrapper {
+    position: relative; // если таким способом делать, получается пустая полоса на том месте, где находился этот элемент изначально
+    top: -275px;
+    margin-left: auto;
+    padding: 0 100px 0 60px;
+    width: 350px;
+    box-sizing: border-box;
+
+  }
+}
+
+.how-made__description {
+  .font-property(13px, 24px, 400, @content-color);
+  margin: 0 auto 25px;
+  width: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .how-made__description {
+    .font-property(15px, 30px, 400, @content-color);
+    margin-bottom: 40px;
+    width: 580px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how-made__description {
+    .font-property(15px, 30px, 400, @content-color);
+    width: auto;
+  }
+}
+
+.how-made__button {
+  margin: 0 auto 25px;
+  padding: 15px 20px;
+  width: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .how-made__button {
+    margin: 0 auto 45px;
+    width: 580px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how-made__button {
+    width: auto;
+    margin-bottom: 0;
+  }
+}

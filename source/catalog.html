@@ -142,7 +142,7 @@
       </section>
       <section class="page-main__how-made how-made">
         <h2 class="how-made__title">
-          <svg class="video__icon" width="32" height="32">
+          <svg class="how-made__icon" width="32" height="32">
             <use xlink:href="img/sprite.svg#icon-video"></use>
           </svg>
           Процесс производства
@@ -151,7 +151,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@1x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@1x.jpg 2x">
-            <img class="video__poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 2x" alt="Процесс производства">
+            <img class="video__poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 2x" width="260" height="150" alt="Процесс производства">
           </picture>
           <button class="video__button">
             <span class="visually-hidden">Воспроизвести</span>
@@ -160,10 +160,12 @@
             </svg>
           </button>
         </div>
-        <p class="how-made__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <button class="how-made__button button">Сделать заказ</button>
+        <div class="how-made__wrapper">
+          <p class="how-made__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="button how-made__button" href="form.html">Сделать заказ</a>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
