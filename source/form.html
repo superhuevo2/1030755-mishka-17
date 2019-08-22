@@ -65,7 +65,7 @@
           <div class="form__wrapper">
             <fieldset class="form__inner">
               <legend class="form__title">Тип</legend>
-              <ul class="form__list form-list--product-type">
+              <ul class="form__list form__list--product-type">
                 <li class="form__item form__item--product-type radio">
                   <input class="radio__input visually-hidden" type="radio" name="product-type" value="accessory" id="accessory">
                   <label class="radio__label" for="accessory">Аксессуар для интерьера</label>
@@ -121,16 +121,16 @@
                   <input class="field__input" type="text" name="client-surname" id="client-surname" placeholder="Укажите фамилию*" required>
                 </li>
                 <li class="form__item form__item--client-name field">
-                  <label class="field__label" for="client-parents-name">Отчество:</label>
-                  <input class="field__input" type="text" name="client-parents-name" id="parents-name" placeholder="Отчество, если желаете">
+                  <label class="field__label" for="client-patronymic">Отчество:</label>
+                  <input class="field__input" type="text" name="client-patronymic" id="patronymic" placeholder="Отчество, если желаете">
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper  form__wrapper--grey">
+          <div class="form__wrapper form__wrapper--grey">
             <fieldset class="form__inner form__inner--contacts form__inner--phone">
               <legend class="form__title">Тел</legend>
-              <div class="field">
+              <div class="form__field field">
                 <input class="field__input field__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
                 <svg class="field__icon" width="32px" height="32px">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -140,7 +140,7 @@
             </fieldset>
             <fieldset class="form__inner form__inner--contacts">
               <legend class="form__title">E-mail</legend>
-              <div class="field">
+              <div class="form__field field">
                 <input class="field__input field__input--contacts" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
                 <svg class="field__icon" width="32px" height="32px">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -149,10 +149,10 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__wrapper extra-filter">
+          <div class="form__wrapper">
             <fieldset class="form__inner">
-              <legend class="form__title extra-filter__title">Доп</legend>
-              <div class="field">
+              <legend class="form__title">Доп</legend>
+              <div class="form__field field">
                 <textarea class="field__input field__input--textarea" name="comment" id="extra">Опишите все ваши пожелания к заказу</textarea>
                 <label class="visually-hidden" for="extra">Дополнительная информация</label>
               </div>

@@ -4,7 +4,7 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    .font-property(19px, 18px);
+    font-size: 19px;
   }
 }
 
@@ -189,6 +189,16 @@
         margin-bottom: 0;
       }
     }
+
+    &--client-name {
+      padding-right: 175px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__field {
+    padding-right: 175px;
   }
 }
 
