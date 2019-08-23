@@ -5,7 +5,21 @@
 
 @media (min-width: @tablet-width) {
   .product-category {
+    position: relative;
     background-image: url("../img/hero-tablet@1x.jpg");
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      z-index: 1;
+      width: 100%;
+      height: 15px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center 0;
+
+    }
   }
 }
 
@@ -18,19 +32,20 @@
 
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
   .product-category {
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-position-x: center;
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 768px auto;
   }
 
   @media (min-width: @tablet-width) {
     .product-category {
-      background-image: url("../img/hero-tablet@1x.jpg");
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
     }
   }
 
   @media (min-width: @desktop-width) {
     .product-category {
-      background-image: url("../img/hero-desktop@1x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
       background-size: cover;
     }
   }
@@ -66,6 +81,7 @@
 
 @media (min-width: @tablet-width) {
   .product-category__list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;

@@ -17,11 +17,20 @@
   }
 }
 
-@media (min-width: @tablet-width) and (min-resolution: @retina-dpi),
-  (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
-  .review {
-    &::before {
-      background-image: url("../img/review@1x.jpg");
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  @media (min-width: @tablet-width) {
+    .review {
+      &::before {
+        background-image: url("../img/review@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .review {
+      &::before {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
 }
