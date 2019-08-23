@@ -1,0 +1,70 @@
+.size-form {
+  .font-property(17px, 16px, 700, @content-color);
+}
+
+
+.size-form__wrapper {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.size-form__title {
+  .font-property(15px, 30px, 400, @content-color);
+  margin: 0 auto 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .size-form__title {
+    font-size: 17px;
+  }
+}
+
+.size-form__list {
+  .lists-reset();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.size-form__label {
+  display: block;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  border: 2px solid @extra-color;
+  cursor: pointer;
+
+  &:hover {
+    border-color: fade(@extra-color, 30);
+  }
+
+  &:active {
+    border-color: @extra-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .size-form__label {
+    padding: 15px 47px;
+  }
+}
+
+.size-form__radio:checked + .size-form__label { // здесь радио может следовало отдельным блоком сделать, как в form?
+  border-color: fade(@extra-color, 10);
+}
+
+.size-form__button {
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: @extra-color;
+  border: none;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30);
+  }
+}

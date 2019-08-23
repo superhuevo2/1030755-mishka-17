@@ -8,5 +8,14 @@
   text-decoration: none;
   text-align: center;
   background-color: @main-background;
-  border: 2px solid @main-color;
+  border: 2px solid @content-color;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @content-color;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30);
+  }
 }

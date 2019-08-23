@@ -1,15 +1,31 @@
 .copyright {
   .font-property(19px, 18px);
-  text-align: center;
+  position: relative;
+  padding-right: 35px;
 }
 
 .copyright__link {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 27px 34px;
+  color: @main-color;
+  text-decoration: none;
+
+  &:hover .copyright__image {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  fill: @extra-color;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__image {
+    top: -7px;
+  }
 }
