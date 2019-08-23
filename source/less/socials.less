@@ -12,21 +12,28 @@
   .lists-reset();
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .socials__link {
   display: block;
-  width: 23px;
-  height: 23px;
-}
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.socials__icon {
-  &:hover {
-    fill: #46c1ae;
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+    background-size: 22px 22px;
   }
 
-  &:active {
-    fill: #bde3dd;
+  &--facebook {
+    background-image: url("../img/icon-fb.svg");
+    background-size: 15px 28px;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-size: 24px 21px;
   }
 }

@@ -25,27 +25,39 @@
   }
 }
 
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo {
+    display: block;
+    padding: 0;
+    width: 105px;
+  }
+}
+
 .page-footer__socials {
-  padding: 20px 45px;
+  padding: 20px 0;
   width: 260px;
-  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__socials {
     padding: 0;
-    width: 150px;
+    width: 200px;
   }
 }
 
 .page-footer__copyright {
   padding: 20px 0;
-  width: 150px;
+  width: 260px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__copyright {
     padding: 0;
+    width: 190px;
     text-align: right;
   }
 }
