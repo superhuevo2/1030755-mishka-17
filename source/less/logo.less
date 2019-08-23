@@ -1,5 +1,18 @@
 .logo {
   height: 100%;
+
+  &:not([href]) .logo__footer-image:hover,
+  &:not([href]) .logo__footer-image:active {
+    fill: #000000;
+  }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__image {
@@ -18,5 +31,25 @@
   .logo__image {
     width: 150px;
     height: 73px;
+  }
+}
+
+.logo__footer-image {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__footer-image {
+    display: block;
+    width: 102px;
+    height: auto;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
   }
 }
