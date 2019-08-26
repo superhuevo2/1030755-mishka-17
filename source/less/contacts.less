@@ -55,6 +55,7 @@
 
 .contacts__title {
   .font-property(18px, 30px);
+  position: relative;
   margin-bottom: 40px;
   padding: 0;
 }
@@ -63,12 +64,28 @@
   .contacts__title {
     .font-property(43px, 50px);
     margin-bottom: 55px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      width: 47px;
+      height: 82px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__title {
     .font-property(53px, 57px);
+
+    &::before {
+      left: -115px;
+    }
   }
 }
 
