@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Вязание на заказ.</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -153,7 +155,7 @@
             <fieldset class="form__inner">
               <legend class="form__title">Доп</legend>
               <div class="form__field field">
-                <textarea class="field__input field__input--textarea" name="comment" id="extra">Опишите все ваши пожелания к заказу</textarea>
+                <textarea class="field__input field__input--textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу" id="extra"></textarea>
                 <label class="visually-hidden" for="extra">Дополнительная информация</label>
               </div>
             </fieldset>
