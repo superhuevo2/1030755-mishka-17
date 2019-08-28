@@ -37,7 +37,7 @@
 
 @media (min-width: @desktop-width) {
   .review {
-    padding: 75px 0 95px 175px;
+    padding: 75px 0 68px 175px;
     box-sizing: border-box;
 
     &::before {
@@ -61,7 +61,6 @@
 @media (min-width: @desktop-width) {
   .review__title {
     .font-property(53px, 57px);
-    margin-bottom: 50px;
   }
 }
 
@@ -107,7 +106,14 @@
   .review__button-wrapper {
     position: absolute;
     right: 0;
-    bottom: 15px;
+    bottom: 55px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__button-wrapper {
+    bottom: 100px;
   }
 }
 
