@@ -8,7 +8,7 @@
     position: relative;
     background-image: url("../img/hero-tablet@1x.jpg");
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       left: 0;
@@ -53,7 +53,7 @@
 .product-category__slogan {
   .font-property(27px, 30px);
   margin: 0 auto;
-  padding: 70px 0 130px;
+  padding: 70px 0 122px;
   width: 260px;
   text-align: center;
 }
@@ -95,6 +95,7 @@
 }
 
 .product-category__item {
+  position: relative;
   margin: 0 auto;
   width: 320px;
 
@@ -109,7 +110,6 @@
 
 @media (min-width: @tablet-width) {
   .product-category__item {
-    position: relative;
     margin: 5px auto 0;
     width: 334px;
 
@@ -129,7 +129,7 @@
 .product-category__link {
   .font-property(19px, 24px);
   display: block;
-  padding: 25px 160px 25px 30px;
+  padding: 27px 160px 28px 30px;
   box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
@@ -146,15 +146,16 @@
 }
 
 .product-category__icon {
-  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 33px;
+  display: block;
+  fill: #3bb09d;
 }
 
 @media (min-width: @tablet-width) {
   .product-category__icon {
-    position: absolute;
     bottom: 20px;
     right: 20px;
-    display: block;
-    fill: #3bb09d;
   }
 }
