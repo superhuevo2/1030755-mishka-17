@@ -1,6 +1,7 @@
 .product-category {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position-x: center;
+  border-top: @grey-border;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,7 +62,7 @@
 @media (min-width: @tablet-width) {
   .product-category__slogan {
     .font-property(43px, 50px);
-    padding: 160px 0 365px;
+    padding: 151px 0 368px;
     width: 500px;
   }
 }
@@ -139,6 +140,12 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .product-category__link {
+    padding: 30px 160px 40px 35px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .product-category__link {
     padding: 25px 350px 25px 30px;
@@ -155,7 +162,7 @@
 
 @media (min-width: @tablet-width) {
   .product-category__icon {
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    right: 35px;
   }
 }
