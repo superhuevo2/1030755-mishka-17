@@ -9,7 +9,23 @@
 }
 
 .form__wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+
+  &--product-type {
+    margin-bottom: 45px;
+  }
+
+  &--client {
+    margin-bottom: 32px;
+  }
+
+  &--contacts {
+    margin-bottom: 20px;
+  }
+
+  &--extra {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -66,7 +82,7 @@
 .form__title {
   .font-property(17px, 16px, 700, @extra-color);
   padding: 0 25px 0 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -89,6 +105,10 @@
 
   &--product-type {
     width: 260px;
+  }
+
+  &--color {
+    margin-top: 7px;
   }
 }
 
@@ -126,7 +146,7 @@
   }
 
   &--color {
-    margin-bottom: 30px;
+    margin-bottom: 43px;
 
     &:last-child {
       margin: 0;
@@ -136,7 +156,7 @@
   &--client-name {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
     &:last-child {
       margin-bottom: 0;
@@ -225,6 +245,7 @@
 
 .form__extra-info {
   .font-property(14px, 16px, 400, @content-color);
+  margin: 0 0 30px;
 }
 
 @media (min-width: @tablet-width) {
