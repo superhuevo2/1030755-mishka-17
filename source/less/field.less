@@ -1,3 +1,7 @@
+.field {
+  position: relative;
+}
+
 .field__label {
   margin-bottom: 15px;
   padding-right: 20px;
@@ -60,16 +64,17 @@
 }
 
 .field__icon {
-  display: none;
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  display: block;
+  fill: #cccccc;
 }
 
 @media (min-width: @tablet-width) {
   .field__icon {
-    position: absolute;
     top: 0;
     right: 22px;
-    display: block;
-    fill: #cccccc;
   }
 }
 
