@@ -60,7 +60,9 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
       <section class="page-main__order order">
         <p class="order__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -81,7 +83,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper form__wrapper--grey">
+          <div class="form__wrapper form__wrapper--color form__wrapper--grey">
             <fieldset class="form__inner">
               <legend class="form__title">Цвет</legend>
               <ul class="form__list form__list--color">
@@ -133,17 +135,17 @@
           </div>
           <div class="form__wrapper form__wrapper--contacts form__wrapper--grey">
             <fieldset class="form__inner form__inner--contacts form__inner--phone">
-              <legend class="form__title">Тел</legend>
+              <legend class="form__title form__title--contacts">Тел</legend>
               <div class="form__field field">
                 <input class="field__input field__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
-                <svg class="field__icon" width="32px" height="32px">
+                <svg class="field__icon" width="26px" height="26px">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
                 <label class="visually-hidden" for="phone">Телефон</label>
               </div>
             </fieldset>
             <fieldset class="form__inner form__inner--contacts">
-              <legend class="form__title">E-mail</legend>
+              <legend class="form__title form__title--contacts">E-mail</legend>
               <div class="form__field field">
                 <input class="field__input field__input--contacts" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
                 <svg class="field__icon" width="32px" height="32px">
@@ -155,7 +157,7 @@
           </div>
           <div class="form__wrapper form__wrapper--extra">
             <fieldset class="form__inner">
-              <legend class="form__title">Доп</legend>
+              <legend class="form__title form__title--extra">Доп</legend>
               <div class="form__field field">
                 <textarea class="field__input field__input--textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу" id="extra"></textarea>
                 <label class="visually-hidden" for="extra">Дополнительная информация</label>
@@ -164,7 +166,7 @@
           </div>
           <div class="form__btn-wrapper">
             <p class="form__extra-info"><sup>*</sup>Поля обязательны для заполнения</p>
-            <button class="form__button button" type="submit">Отправить заказ</button>
+            <button class="button form__button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>

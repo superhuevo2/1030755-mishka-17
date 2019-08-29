@@ -20,18 +20,39 @@
   }
 
   &--contacts {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   &--extra {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
+
 
 @media (min-width: @tablet-width) {
   .form__wrapper {
     margin-bottom: 0;
     padding: 55px 0;
+
+    &--product-type {
+      padding: 25px 0 70px;
+    }
+
+    &--color {
+      padding: 68px 0 66px;
+    }
+
+    &--client {
+      padding: 65px 0 45px;
+    }
+
+    &--contacts {
+      padding: 65px 0 45px;
+    }
+
+    &--extra {
+      padding: 53px 0;
+    }
 
     &--grey {
       background-color: #f1f1f1;
@@ -59,9 +80,8 @@
     box-sizing: border-box;
     border: none;
 
-    &--contacts {
-      position: relative;
-      width: 668px;
+    &--phone {
+      margin-bottom: 34px;
     }
   }
 }
@@ -82,15 +102,27 @@
 .form__title {
   .font-property(17px, 16px, 700, @extra-color);
   padding: 0 25px 0 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   text-transform: uppercase;
+
+  &--contacts {
+    margin-bottom: 28px;
+  }
+
+  &--extra {
+    margin-bottom: 28px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .form__title {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
+
+    &--extra {
+      top: 18px;
+    }
   }
 }
 
@@ -121,6 +153,7 @@
     &--color {
       display: flex;
       flex-wrap: wrap;
+      margin: 0;
       width: 500px;
     }
   }
@@ -174,6 +207,7 @@
 
     &--client-name {
       flex-direction: row;
+      margin-bottom: 33px;
     }
   }
 }
@@ -181,7 +215,7 @@
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
   .form__item {
     &--color {
-      margin: 0 50px 40px 0;
+      margin: 0 37px 58px 0;
       width: 225px;
 
       &:nth-child(2n) {
@@ -232,6 +266,7 @@
   .form__btn-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 668px;
   }
 }
@@ -240,6 +275,13 @@
   .form__btn-wrapper {
     display: flex;
     width: 700px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__button {
+    padding: 15px 30px;
+    width: 230px;
   }
 }
 
@@ -252,6 +294,7 @@
   .form__extra-info {
     .font-property(17px, 30px, 400, @content-color);
     order: 1;
+    margin-top: 5px;
     width: 334px;
     text-align: right;
   }
