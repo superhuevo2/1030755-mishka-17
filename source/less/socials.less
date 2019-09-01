@@ -15,6 +15,18 @@
   justify-content: space-between;
 }
 
+@media (min-width: @tablet-width) {
+  .socials__list {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .socials__item:not(:last-child) {
+    margin-right: 37px;
+  }
+}
+
 .socials__link {
   display: block;
   width: 23px;

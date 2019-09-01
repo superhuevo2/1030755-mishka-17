@@ -1,7 +1,7 @@
 @media (min-width: @tablet-width) {
   .review {
     position: relative;
-    padding: 80px 0 45px;
+    padding: 80px 0 20px;
 
     &::before {
       content: "";
@@ -17,18 +17,27 @@
   }
 }
 
-@media (min-width: @tablet-width) and (min-resolution: @retina-dpi),
-  (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
-  .review {
-    &::before {
-      background-image: url("../img/review@1x.jpg");
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  @media (min-width: @tablet-width) {
+    .review {
+      &::before {
+        background-image: url("../img/review@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .review {
+      &::before {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .review {
-    padding: 75px 0 95px 175px;
+    padding: 75px 0 68px 175px;
     box-sizing: border-box;
 
     &::before {
@@ -39,20 +48,19 @@
 
 .review__title {
   .font-property();
-  margin: 0 0 30px;
+  margin: 0 0 25px;
 }
 
 @media (min-width: @tablet-width) {
   .review__title {
     .font-property(43px, 50px);
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .review__title {
     .font-property(53px, 57px);
-    margin-bottom: 50px;
   }
 }
 
@@ -62,7 +70,7 @@
 
 .review__message {
   .font-property(15px, 30px, 400, @content-color);
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -81,27 +89,35 @@
 
 .review__name {
   .font-property(17px, 20px);
+  margin: 0 0 5px;
 }
 
 .review__contact {
   .font-property(17px, 30px, 400, @content-color);
-  margin-bottom: 30px;
+  margin: 0 0 28px;
 }
 
 .review__button-wrapper {
   display: flex;
+  margin-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
   .review__button-wrapper {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 55px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__button-wrapper {
+    bottom: 100px;
   }
 }
 
 .review__button {
-  margin-bottom: 40px;
   width: 130px;
   height: 50px;
   font-size: 0;
@@ -143,7 +159,7 @@
 @media (min-width: @tablet-width) {
   .review__write {
     position: absolute;
-    top: 60px;
+    top: 80px;
     right: 0;
     width: 175px;
   }

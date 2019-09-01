@@ -1,4 +1,9 @@
 .page-header {
+  border-top: @grey-border;
+  border-bottom: @grey-border;
+}
+
+.page-header__wrapper {
   .font-property(17px, 24px);
   position: relative;
   display: flex;
@@ -8,7 +13,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
+  .page-header__wrapper {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
@@ -17,24 +22,25 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
+  .page-header__wrapper {
     width: 1050px;
   }
 }
 
 .page-header__logo {
-  margin: 19px auto;
+  margin: 18px auto;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    margin: 20px 0;
+    margin: 19px 0 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
     position: absolute;
+    top: -10px;
     left: 450px;
     z-index: 1;
     width: 150px;
@@ -63,7 +69,8 @@
   .page-header__extra-info {
     position: absolute;
     right: 0;
-    bottom: -50px;
+    bottom: -42px;
+    z-index: 1;
     display: block;
     margin: 0;
   }

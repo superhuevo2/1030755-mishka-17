@@ -29,9 +29,6 @@
   background-color: transparent;
   border: none;
 
-  /*temp*/
-  outline: 1px solid black;
-
   &::before {
     content: "";
     position: absolute;
@@ -67,7 +64,8 @@
   .navigation__site-nav {
     position: absolute;
     left: -320px;
-    bottom: -50px;
+    bottom: -43px;
+    z-index: 1;
   }
 }
 
@@ -85,7 +83,8 @@
   .navigation__catalog-nav {
     position: absolute;
     left: 0;
-    bottom: -50px;
+    bottom: -42px;
+    z-index: 1;
     display: flex;
   }
 }
