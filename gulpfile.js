@@ -7,6 +7,13 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var webp = require("gulp-webp");
+
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.jpg")
+    .pipe(webp({"quality": 92}))
+    .pipe(gulp.dest("source/img/webp"))
+})
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
