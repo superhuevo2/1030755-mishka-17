@@ -13,12 +13,10 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sourcemaps": "2.6.x",
-    "gulp-webp": "^4.0.1",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
-    "createwebp": "gulp webp",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
