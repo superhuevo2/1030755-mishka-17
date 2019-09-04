@@ -30,7 +30,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{jpg, png, svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
