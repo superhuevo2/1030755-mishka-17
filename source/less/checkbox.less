@@ -37,31 +37,41 @@
   }
 }
 
-.checkbox__input:checked + .checkbox__label {
-  &::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 14px);
-    left: 4px;
-    width: 33px;
-    height: 28px;
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .checkbox__input:checked + .checkbox__label {
+.checkbox__input {
+  &:checked + .checkbox__label {
     &::after {
       content: "";
       position: absolute;
-      top: 50%;
-      transform: translate(0, -8px);
-      left: 10px;
+      top: calc(50% - 14px);
+      left: 4px;
       width: 33px;
       height: 28px;
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
+    }
+  }
+
+  &:focus + .checkbox__label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox__input {
+    &:checked + .checkbox__label {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -8px);
+        left: 10px;
+        width: 33px;
+        height: 28px;
+        background-image: url("../img/icon-tick.svg");
+        background-repeat: no-repeat;
+      }
     }
   }
 }

@@ -34,16 +34,24 @@
   }
 }
 
-.radio__input:checked + .radio__label {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 11px;
-    width: 18px;
-    height: 18px;
-    background-color: @input-color;
-    border-radius: 50%;
+.radio__input {
+  &:checked + .radio__label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 11px;
+      width: 18px;
+      height: 18px;
+      background-color: @input-color;
+      border-radius: 50%;
+    }
+  }
+
+  &:focus + .radio__label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px;
   }
 }
 
