@@ -115,6 +115,10 @@
           </div>
             <a class="product-week__image-link" href="knitting-baskets.html">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
                 <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
@@ -200,11 +204,17 @@
             </div>
           </div>
           <div class="contacts__map map">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="Как нас найти">
-            </picture>
+            <div class="map__wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-tablet@1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="Как нас найти">
+              </picture>
+            </div>
           </div>
           <a class="button contacts__write-us" href="writeus.html">Напишите нам</a>
         </div>
