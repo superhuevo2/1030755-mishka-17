@@ -2,7 +2,7 @@
   position: fixed;
   top: 20%;
   left: 50%;
-  z-index: 10;
+  z-index: 11;
   display: none;
   margin: 0 0 0 -160px;
   width: 320px;
@@ -10,6 +10,10 @@
   box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 15px 10px -5px rgba(0, 0, 0, 0.25);
+
+  &--show {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
