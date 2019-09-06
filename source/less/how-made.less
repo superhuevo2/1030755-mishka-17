@@ -6,6 +6,18 @@
   border: @grey-border;
 }
 
+@media (min-width: @tablet-width) {
+  .how-made {
+    &:hover {
+      box-shadow: 0 5px 6px 4px fade(#000000, 10);
+    }
+
+    &:active {
+      box-shadow: 0 3px 3px 2px fade(#000000, 10);
+    }
+  }
+}
+
 @media (min-width: @desktop-width) {
   .how-made {
     flex-direction: row;
