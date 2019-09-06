@@ -30,15 +30,41 @@
   width: 101px;
   height: 77px;
   background-color: transparent;
-  background-image: url("../img/icon-play.svg");
+  //background-image: url("../img/icon-play.svg");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    width: 121px;
+    height: 93px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .video__button {
     top: 227px;
+  }
+}
+
+.video__icon {
+  fill: @extra-color;
+
+  &:hover {
+    width: 121px;
+    height: 93px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    fill: #d0f1ea;
   }
 }
