@@ -80,9 +80,11 @@ gulp.task("html", function() {
 })
 
 gulp.task("js", function() {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/*.js")
     .pipe(minify())
-    .pipe(rename("script.min.js"))
+    .pipe(rename(function(path) {
+      path.basename += ".min"
+    }))
     .pipe(gulp.dest("build/js"))
 })
 
